@@ -46,25 +46,44 @@
     .image-container {
       display: flex;
       align-items: center;
+      margin-bottom: 20px;
     }
     
     .image-container img {
       max-width: 200px;
       margin-right: 10px;
+      border-radius: 10px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
     }
     
     .section {
       display: none;
+      padding: 20px;
+      background-color: #f2f2f2;
+      border-radius: 10px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
     }
     
     .section.active {
       display: block;
     }
+    
+    h1, h2, h3 {
+      color: #333;
+    }
+    
+    p {
+      color: #555;
+    }
+
+    #nft {
+      color: white;
+    }
   </style>
 </head>
 <body>
   <header>
-    <h1>JingerNFTs</h1>
+    <h1 id="nft">JingerNFTs</h1>
   </header>
   
   <nav>
@@ -72,32 +91,55 @@
       <li><a href="#home">Home</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#projects">Projects</a></li>
-      <li><a href="#news">News</a></li>
     </ul>
   </nav>
   
   <div class="container">
     <section id="home" class="section active">
-      <h2>Welcome to JingerNFTs</h2>
+      <h1>Welcome to JingerNFTs</h1>
       <p>At JingerNFTs, our creativity and passion for technology and art have come together to create stunning NFTs at an affordable price.</p>
       
-      <h3>NFT Collections</h3>
       <div class="image-container">
-        <img src="collection1.jpg" alt="Collection 1">
-        <h3>Pixl Tigers</h3>
-        <p>A wide collection featuring collectible tigers, each of which are carefully hand-crafted, unique, and jewled.</p>
+        <img src="collection1.jpg" alt="Pixl Tigers">
+        <div>
+          <h3>Pixl Tigers</h3>
+          <p>A wide collection featuring collectible tigers, each of which are carefully hand-crafted, unique, and jeweled.</p>
+        </div>
       </div>
       
       <div class="image-container">
-        <img src="collection2.jpg" alt="Collection 2">
-        <p>Description of Collection 2</p>
+        <img src="collection2.jpg" alt="Ex 1">
+        <div>
+          <h3>Collection 2</h3>
+          <p>Description of Collection 2</p>
+        </div>
+      </div>
+
+      <div class="image-container">
+        <img src="collection2.jpg" alt="Ex 2">
+        <div>
+          <h3>Collection 3</h3>
+          <p>Description of Collection 3</p>
+        </div>
+      </div>
+
+      <div class="image-container">
+        <img src="collection2.jpg" alt="Ex 3">
+        <div>
+          <h3>Collection 4</h3>
+          <p>Description of Collection 4</p>
+        </div>
       </div>
     </section>
     
     <section id="about" class="section">
       <!-- More detailed description of JingerNFTs -->
-      <h2>About JingerNFTs</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu velit mauris. Etiam sed velit odio. Integer vitae urna magna. Donec eu ultrices quam. Sed consequat cursus tellus at fermentum. Sed ut mauris quis justo vulputate eleifend. Proin suscipit, nunc in efficitur hendrerit, dui sem ultrices nisi, nec fringilla metus nisi vel lorem.</p>
+      <h2>About</h2>
+      <p>Welcome to JingerNFTs! JingerNFTs is the official home of our creative and dedicated team whose creativity and passion for technology and art have come together. Here at JingerNFTs, we strive to create appealing NFTs available at a reasonable and affordable price. </p>
+      <br>
+      <p>We have worked with various types of software and advanced code. Combined, we can code in over 10 languages as well as navigate multiple frameworks and programs. We are proud to say that we have touched almost every corner of the web.</p>
+      <br>
+      <p>But, we are prouder that we have come together as a team to dedicate our passion for technology and art to something meaningful: using our skills to create stunning artwork that everyone can enjoy due to their cheap, affordable prices.</p>
     </section>
     
     <section id="projects" class="section">
@@ -105,27 +147,12 @@
       <h2>Projects</h2>
       <ul>
         <li>
-          <h3>Project 1</h3>
-          <p>Description of Project 1</p>
+          <h3>Recipe Generator</h3>
+          <p>This creative app generates delicious, breathtaking recipes, with both the ingredients and steps included, from everyday food you find lying around your house. Recipe Generator can become very creative, so before you throw away seemingly useless food, plug it in to Recipe Generator to learn how it can be incorporated into a mouth-watering recipe.</p>
         </li>
         <li>
           <h3>Project 2</h3>
           <p>Description of Project 2</p>
-        </li>
-      </ul>
-    </section>
-    
-    <section id="news" class="section">
-      <!-- Articles and snippets of information about NFTs -->
-      <h2>News</h2>
-      <ul>
-        <li>
-          <h3>News Article 1</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </li>
-        <li>
-          <h3>News Article 2</h3>
-          <p>Nullam eu velit mauris. Etiam sed velit odio.</p>
         </li>
       </ul>
     </section>
