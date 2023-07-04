@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JingerNFTs</title>
+  <style>
+    /* Add your custom CSS styles here */
+    /* Example styles for demonstration purposes */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      background-color: #f2f2f2;
+    }
+    
+    nav ul li {
+      margin: 0 10px;
+    }
+    
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      padding: 10px;
+    }
+    
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 0 20px;
+    }
+    
+    .image-container {
+      display: flex;
+      align-items: center;
+    }
+    
+    .image-container img {
+      max-width: 200px;
+      margin-right: 10px;
+    }
+    
+    .section {
+      display: none;
+    }
+    
+    .section.active {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>JingerNFTs</h1>
+  </header>
+  
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#news">News</a></li>
+    </ul>
+  </nav>
+  
+  <div class="container">
+    <section id="home" class="section active">
+      <h2>Welcome to JingerNFTs</h2>
+      <p>At JingerNFTs, our creativity and passion for technology and art have come together to create stunning NFTs at an affordable price.</p>
+      
+      <h3>NFT Collections</h3>
+      <div class="image-container">
+        <img src="collection1.jpg" alt="Collection 1">
+        <h3>Pixl Tigers</h3>
+        <p>A wide collection featuring collectible tigers, each of which are carefully hand-crafted, unique, and jewled.</p>
+      </div>
+      
+      <div class="image-container">
+        <img src="collection2.jpg" alt="Collection 2">
+        <p>Description of Collection 2</p>
+      </div>
+    </section>
+    
+    <section id="about" class="section">
+      <!-- More detailed description of JingerNFTs -->
+      <h2>About JingerNFTs</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu velit mauris. Etiam sed velit odio. Integer vitae urna magna. Donec eu ultrices quam. Sed consequat cursus tellus at fermentum. Sed ut mauris quis justo vulputate eleifend. Proin suscipit, nunc in efficitur hendrerit, dui sem ultrices nisi, nec fringilla metus nisi vel lorem.</p>
+    </section>
+    
+    <section id="projects" class="section">
+      <!-- List of projects with more descriptions -->
+      <h2>Projects</h2>
+      <ul>
+        <li>
+          <h3>Project 1</h3>
+          <p>Description of Project 1</p>
+        </li>
+        <li>
+          <h3>Project 2</h3>
+          <p>Description of Project 2</p>
+        </li>
+      </ul>
+    </section>
+    
+    <section id="news" class="section">
+      <!-- Articles and snippets of information about NFTs -->
+      <h2>News</h2>
+      <ul>
+        <li>
+          <h3>News Article 1</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </li>
+        <li>
+          <h3>News Article 2</h3>
+          <p>Nullam eu velit mauris. Etiam sed velit odio.</p>
+        </li>
+      </ul>
+    </section>
+  </div>
+  
+  <script>
+    // Add your custom JavaScript code here
+    
+    // Example JavaScript for demonstration purposes
+    document.addEventListener('DOMContentLoaded', function() {
+      var navLinks = document.querySelectorAll('nav a');
+      var sections = document.querySelectorAll('.section');
+      
+      navLinks.forEach(function(link) {
+        link.addEventListener('click', function(event) {
+          event.preventDefault();
+          var targetSectionId = link.getAttribute('href').substring(1);
+          
+          sections.forEach(function(section) {
+            if (section.id === targetSectionId) {
+              section.classList.add('active');
+            } else {
+              section.classList.remove('active');
+            }
+          });
+        });
+      });
+    });
+  </script>
+</body>
+</html>
